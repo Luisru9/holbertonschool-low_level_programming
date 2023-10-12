@@ -1,2 +1,2 @@
 #!/bin/bash
-export -c "cisfun" $CFILE
+gcc $CFILE -o cisfun
