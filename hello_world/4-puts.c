@@ -1,8 +1,9 @@
-#include <studio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
+ * main - Prints a string and ends
  *
- * Return: Always 0 (Success)
+ * Return: success
  */
 int main(void)
 {
