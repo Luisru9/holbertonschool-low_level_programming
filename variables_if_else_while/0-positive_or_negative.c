@@ -19,4 +19,5 @@ int main(void)
 		printf("id  is zero\n", n);
 	else
 		printf("id is zero\n", n);
-	return (0);
+	return (0)
+};
