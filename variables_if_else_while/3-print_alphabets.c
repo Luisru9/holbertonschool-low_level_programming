@@ -14,7 +14,7 @@ int main(void)
 	c = 'A';
 	while
 		(c <= 'z') {
-:x
+			putchar(c);
 			c++;
 		}
 	while
