@@ -1,20 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - function of the task
- * Return: always zero
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
 
 int main(void)
+
 {
-	char i;
+	char low, e, q;
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
-	
-	for (i = 'q'; i <= 'e'; i++)
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'a; low <= 'z'; low++)
+	{
+		if (low != e && low != q)
+			putchar(low);
+	}
 	putchar('\n');
-
 	return (0);
-
 }
