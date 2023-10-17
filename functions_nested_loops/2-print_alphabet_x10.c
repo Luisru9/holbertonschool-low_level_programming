@@ -5,14 +5,20 @@
  * Return: void
  */
 
-int main ()
-{
-	char ch = 'a';
+void print_alphabet_x10(void)
 
-	while(ch <= 'z')
+{
+
+	char c;
+	int i = 0;
+
+	while (i <= 0)
 	{
-		printf("%c", ch);
-		ch++;
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
+		i++;
 	}
-	return 0;
 }
