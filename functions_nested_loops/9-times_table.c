@@ -37,4 +37,5 @@ int x, y, z, u, d;
 	}
 	}
 	_putchar('\n');
+	}
 }
