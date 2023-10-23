@@ -3,13 +3,17 @@
 
 /**
  * print_rev - Prints a string in reverse
+ *
  * @m: The string to print
+ *
  * Return: void
  */
 
 void print_rev(char *m)
+
 {
 	int c = 0;
+
 	while (m[c] != '\0')
 	{
 		c++;
