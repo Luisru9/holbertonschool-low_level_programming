@@ -10,7 +10,6 @@
 void print_rev(char *m)
 {
 	int c = 0;
-	
 	while (m[c] != '\0')
 	{
 		c++;
