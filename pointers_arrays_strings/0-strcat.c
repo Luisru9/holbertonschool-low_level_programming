@@ -5,6 +5,7 @@
  * _strcat - Concatenates tow strings
  * @dest: The destination string
  * @srt: The source string
+ *
  * Return: A pointer to the resulting string dest
  */
 
