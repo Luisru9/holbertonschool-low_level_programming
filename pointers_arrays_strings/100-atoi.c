@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	int c = 0;
 
-	undesigned int ni = 0;
+	unsigned int ni = 0;
 
 	int min = 1;
 
