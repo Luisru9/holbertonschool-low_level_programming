@@ -1,25 +1,26 @@
 #include "main.h"
-
 /**
- * leet - encodes a string to 1337.
- * @gri: The string to be encoded
- *
- * Return: a pointer to encode the string.
+ * leet - a function that encodes a string into 1337.
+ * @str: string to be encoded.
+ * Return: a pointer of the string encoded.
  */
-
-char *leet(char *gri)
+char *leet(char *str)
 {
-	int trix1 = 0, trix2;
-	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	char *tmp = str;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
+	unsigned int i;
 
-	while (gri[trix1])
+	while (*str)
 	{
-		for (trix2 = 0; trix2 <= 7; trix2++)
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if (gri[trix1] == leet[trix2] || gri[trix1 - 32 == leet[trix2])
-				gri[trix1] = trix2 + '0';
+			if (*str == key[i] || *str == key[i] + 32)
+			{
+				*str = value[i] + '0';
+			}
 		}
-		trix1++;
+		str++;
 	}
-	return (gri);
+	return (tmp);
 }
