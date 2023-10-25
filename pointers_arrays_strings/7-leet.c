@@ -1,65 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * leet - encode into 1337speak
- * @t: Input value
- * Return: n value
+ * leet - encodes a string to 1337.
+ * @gri: The string to be encoded
+ *
+ * Return: a pointer to encode the string.
  */
 
-char *leet(char *t)
+char *leet(char *gri)
 {
-	int i;
+	int trix1 = 0, trix2;
+	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	for (i = 0; input_string[i] != '\0'; i++)
-		switch (tolower(input_string[i])) {
-            case 'a':
-                input_string[i] = '4';
-                break;
-            case 'b':
-                input_string[i] = '8';
-                break;
-            case 'c':
-                input_string[i] = '<';
-                break;
-            case 'e':
-                input_string[i] = '3';
-                break;
-            case 'g':
-                input_string[i] = '9';
-                break;
-            case 'h':
-                input_string[i] = '#';
-                break;
-            case 'i':
-                input_string[i] = '1';
-                break;
-            case 'l':
-                input_string[i] = '|';
-                break;
-            case 'o':
-                input_string[i] = '0';
-                break;
-            case 's':
-                input_string[i] = '$';
-                break;
-            case 't':
-                input_string[i] = '7';
-                break;
-            case 'z':
-                input_string[i] = '2';
-                break;
-            // Default case for other characters, do nothing
-            default:
-                break;
-        }
-    }
-}
-
-int main() {
-    char input_string[] = "Hello, World!";
-    to_leet_speak(input_string);
-    printf("%s\n", input_string);
-
-    return 0;
+	while (gri[trix1])
+	{
+		for (trix2 = 0; trix2 <= 7; trix2++)
+		{
+			if (gri[trix1] == leet[trix2] || gri[trix1 - 32 == leet[trix2])
+				gri[trix1] = trix2 + '0';
+		}
+		trix1++;
+	}
+	return (gri);
 }
