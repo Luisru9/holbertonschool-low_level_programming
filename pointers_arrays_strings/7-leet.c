@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * leet - encode into 1337 peak
+ * leet - encode into 1337peak
  * @n: Input value
  * Return: n value
  */
 
 char *leet(char *n)
-
 {
 	int i, j;
 	char s1[] -"aAeEoOtTlL";
