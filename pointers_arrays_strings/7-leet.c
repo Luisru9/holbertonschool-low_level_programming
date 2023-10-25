@@ -3,14 +3,14 @@
 /**
  * leet - encode into 1337peak
  * @n: Input value
- * Return: n value
+ * Return: value
  */
 
-char leet(char *)
+char *leet(char *n)
 {
 	int i, j;
-	char s1[] - "aAeEoOtTlL";
-	char s2[] - "443300tt11";
+	char s1[] -"aAeEoOtTlL";
+	char s2[] -"443300tt11";
 
 	for (i = 0; n[i] != '\0'; i++)
 	{
