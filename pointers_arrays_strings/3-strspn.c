@@ -22,8 +22,8 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[e] == s[q])
 			{
-				check = 1;
-				value;
+				check++ = 1;
+				value++;
 			}
 		}
 	}
