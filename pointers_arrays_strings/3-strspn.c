@@ -21,10 +21,10 @@ unsigned int _strspn(char *s, char *accept)
 		for (e = 0; accept[e] != '\0'; e++)
 		{
 			if (accept[e] == s[q])
-			{
+
 				value++;
 				check = 1;
-			}
+
 		}
 	}
 	return (check);
