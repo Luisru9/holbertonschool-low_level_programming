@@ -8,17 +8,16 @@
  * Return: always 0
  */
 
-unsigned int _strspn(char *s, *accept)
+unsigned int _strspn(char *s, char *accept)
 
 {
 	unsigned int k, h, value, check;
-	
+
 	value = 0;
-	
 	for (i = 0; s[i] != '\0';  k++)
 	{
 		check = 0;
-		
+
 		for (n = 0; accept[n] != '\0'; h++)
 		{
 			if (accept[n] == s[i])
@@ -30,4 +29,3 @@ unsigned int _strspn(char *s, *accept)
 	}
 	return (0);
 }
-
