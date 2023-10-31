@@ -4,13 +4,15 @@
 
 /**
  * main - prog to print
- * @argc: num
- * @argv: names
+ * @argc: num of args
+ * @argv: names of args
  * Return: 0
  */
 
 int main(int argc, _attribute_((unused))char **argv)
+
 {
+
 	printf("%d\n", argc - 1);
 	return (0);
 }
