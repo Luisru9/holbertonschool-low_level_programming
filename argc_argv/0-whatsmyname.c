@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - program to print name
@@ -7,9 +7,10 @@
  * Return: 0
  */
 
-int main(int argc _attribute_((unused)), char *argv[])
+int main(int argc, char *argv[])
 
 {
+	if (argc)
 		printf("%s\n", argv[0]);
 	return (0);
 }
