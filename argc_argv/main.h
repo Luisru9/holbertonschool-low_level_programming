@@ -1,2 +1,6 @@
-void whatsmyname(char **s, int c);
-void print_args(int c);
+#ifndef MAIN_H
+#define MAIN_H
+
+int main (int argc, char *argv[]);
+
+#endif
