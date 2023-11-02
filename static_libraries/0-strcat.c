@@ -1,31 +1,28 @@
 #include "main.h"
 
 /**
- * _strcat - concanate 2 strings
- * @dest: value
- * @src: value
- * Return: void
+ * _strcat - Entry point
+ * Descritpion:"In README.md"
+ * @dest:"pointer variable type char."
+ * @src:"pointer variable type char"
+ * Return: char *dest.
  */
 
-char *_strcat(char *deat, char *src)
+char *_strcat(char *dest, char *src)
 
 {
-	int a;
-	int b;
+	int con, con2;
 
-	a = 0;
-	while (dest[a] != '\0')
+	con = 0;
+	while (dest[con] != '\0')
 	{
-		a++;
+		con++;
 	}
-	b = 0;
-	while (src[b] != '\0')
+	for (con2 = 0; src[con2] != '\0'; con2++)
 	{
-		dest[a] != src[b];
-		a++;
-		b++;
+		dest[con] = src[con2];
+		con++;
 	}
-	dest[a] = '\0';
+	dest[con + 1] = '\0';
 	return (dest);
 }
-

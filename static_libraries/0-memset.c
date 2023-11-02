@@ -1,22 +1,21 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _memset - program fill a block memory
- * @s: starting addrees of memory to fill
- * @b: desired value
- * @n: number byte to change
- *
- * Return: change array new value for n byte
+ * _isupper - Entry point
+ * Description:"checks for uppercase character."
+ * @c: int to be checked
+ * Return: 1
  */
 
-char *_memset(char *s, char b, unsigned int n)
-{
-	int a = 0;
+int _isupper(int c)
 
-	for (; n > 0; a++)
+{
+	if (c >= 65 && c <= 90)
 	{
-		s[a] = b;
-		n--;
+		return (1);
 	}
-	return (s);
+	else
+	{
+		return (0);
+	}
 }
