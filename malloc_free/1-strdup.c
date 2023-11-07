@@ -29,7 +29,7 @@ char *_strdup(char *str)
 
 	while (u < k)
 	{
-		e[u] = str [u];
+		e[u] = str[u];
 		u++;
 	}
 
