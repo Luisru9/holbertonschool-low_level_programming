@@ -5,7 +5,7 @@
  * create_array - create array of char
  * @size: size of the array
  * @c: char to fill array
- * Retrun: array filled
+ * Return: array filled
  */
 
 char *create_array(unsigned int size, char c)
