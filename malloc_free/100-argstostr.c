@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * argstostr _ program to string
+ * argstostr - program to point a pointer to a string
  * @up: argument to count
  * @dw: argument vector
  *
@@ -27,13 +27,10 @@ char *argstostr(int up, char **dw)
 			ch++;
 			c++;
 		}
-
 		c = 0;
 		b++;
 	}
-
 	s = malloc((sizeof(char) * ch) + up + 1);
-
 		b = 0;
 	while (dw[b])
 	{
@@ -43,7 +40,6 @@ char *argstostr(int up, char **dw)
 			d++;
 			c++;
 	}
-
 	s[d] = '\n';
 
 	c = 0;
