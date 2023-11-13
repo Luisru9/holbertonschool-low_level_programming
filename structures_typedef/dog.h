@@ -1,5 +1,5 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef _HEADER_
+#define _HEADER_
 
 /**
  * struct dog - age owner name info
