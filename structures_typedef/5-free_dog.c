@@ -8,10 +8,10 @@
  * Return: nothing
  */
 
-void free_dog(dogt_t *d)
+void free_dog(dog_t *d)
 
 {
-	if (d !=NULL);
+	if (d != NULL)
 	{
 		free(d->owner);
 		free(d->name);
