@@ -2,11 +2,15 @@
 
 
 /**
- *linear_search - preform a linear search
- *@array: pointer to the array
- *@size: size of the array
- *@value: data to be compared
- *Return: index value whre data is found
+ * linear_search - preform a linear search
+ *
+ * @array: pointer to the array
+ *
+ * @size: size of the array
+ *
+ * @value: data to be compared
+ * 
+ * Return: index value whre data is found
  */
 
 
